@@ -1,0 +1,824 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400&display=swap');
+
+*
+{
+    margin: 0;
+    padding: 0;
+    outline: none;
+    text-decoration: none;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+.thumbs-wrapper.axis-vertical
+{
+    display:none;
+}
+
+.footer
+{
+    font-size: 14px;
+    background: #363636;
+    color: white;
+    text-align: center;
+    width: 100%;
+    padding: 20px 20px;
+}
+
+.navigator
+{
+    display: flex;
+    background: #363636;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0px 3px 5px 0px rgb(0 0 0 / 25%);
+    width: 100%;
+    padding: 10px;
+    box-sizing: border-box;
+    color: white;
+    font-weight: 600;
+    font-size: 15px;
+    position: sticky;
+    z-index: 3;
+}
+
+/* Info */
+.info
+{
+    display: flex;
+    align-items: center;
+    box-sizing: border-box;
+}
+
+.info-item
+{
+    padding: 0 5px;
+}
+
+.info-inner
+{
+    padding: 0 5px;
+}
+
+.info-sales
+{
+    display: flex;
+    align-items: center;
+}
+
+.info-sales img
+{
+    width: 40px;
+    margin-right: 10px;
+}
+
+.info-sales .name
+{
+    font-size: 12px;
+}
+
+.info-box
+{
+    display: flex;
+    align-items: center;
+    padding: 5px 15px;
+    border: 1px solid white;
+    border-radius: 10px;
+    font-size: 12px;
+}
+
+/* Menu */
+.menu-box
+{
+    display: flex;
+    flex-direction: column;
+    padding: 0 15px;
+    align-items: center;
+    text-decoration: none;
+    color: white;
+}
+
+.menu-box img
+{
+    width: 30px;
+    margin-bottom: 5px;
+}
+
+.menu-box span
+{
+    font-size: 11px;
+}
+
+/* Hamburger Menu */
+.menu-toggle {
+    display: none;
+    flex-direction: column;
+    height: 20px;
+    justify-content: space-between;
+    position: relative;
+}
+
+.menu-toggle input {
+    position: absolute;
+    width: 44px;
+    height: 28px;
+    left: -8px;
+    top: -3px;
+    opacity: 0;
+    cursor: pointer;
+    z-index: 3;
+}
+
+.menu-toggle span {
+    display: block;
+    width: 28px;
+    height: 3px;
+    background-color: #e8e7e5;
+    border-radius: 5px;
+    transition: all 0.5s;
+}
+
+/* Hamburger Menu Animation*/
+.menu-toggle span:nth-child(2) {
+    transform-origin: 0 0;
+}
+
+.menu-toggle span:nth-child(4) {
+    transform-origin: 0 100%;
+}
+
+.menu-toggle input:checked~span:nth-child(2) {
+    transform: rotate(45deg) translate(-1px, -1px);
+}
+
+.menu-toggle input:checked~span:nth-child(3) {
+    opacity: 0;
+    transform: scale(0);
+}
+
+.menu-toggle input:checked~span:nth-child(4) {
+    transform: rotate(-45deg) translate(-1px, 0px);
+    ;
+}
+
+/* Content */
+.section
+{
+    display: block;
+}
+.baris
+{
+    display: flex;
+    flex-wrap: wrap;
+    position: relative;
+    align-items: stretch;
+}
+.content-mobil
+{
+    flex: 0 0 70%;
+    max-width: 70%;
+}
+.list-mobil
+{
+    padding: 20px 10px 0px 10px;
+    height: 100%;
+}
+.mobil-menu
+{
+    margin-bottom: 20px;
+    flex: 0 0 25%;
+    max-width: 25%;
+    padding-right: 10px;
+    padding-left: 10px;
+}
+.mobil-menu .mobil
+{
+    padding: 10px;
+    text-align: center;
+    background-color: white;
+    border-radius: 10px;
+    transition: all .2s;
+}
+.mobil-menu .mobil:hover
+{
+    border-radius: 10px;
+    box-shadow: 0px 3px 5px 0px rgb(0 0 0 / 25%);
+}
+.mobil-menu .mobil img
+{
+    width: 100%;
+}
+.mobil-info
+{
+    width: 100%;
+    padding: 5px;
+    border-radius: 10px;
+    text-align: center;
+    color: black;
+    font-size: 13px;
+}
+.mobil_name
+{
+    font-size: 16px!important;
+    font-weight: bold;
+}
+.mobil_price
+{
+    background-color: #363636;
+    color: white;
+    border-radius: 20px;
+    font-weight: bold;
+}
+
+.content-testi
+{
+    flex: 0 0 30%;
+    max-width: 30%;
+}
+.list-testi
+{
+    padding: 10px;
+    background-color: #363636;
+    color: #fff;
+    height: 100%;
+    border-left: 1px solid #ddd;
+}
+.box-testi
+{
+    flex: 0 0 50%;
+    max-width: 50%;
+}
+.box-testi .testi
+{
+    padding: 10px;
+    text-align: center;
+    border-radius: 10px;
+}
+.box-testi .testi img
+{
+    width: 100%;
+    border: 2px solid white;
+}
+
+.sales-testi
+{
+    width: 100%;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.sales-testi img
+{
+    width: 60%;
+    border: 2px solid white;
+}
+
+/* Detail */
+
+.gambar-detail
+{
+    position: relative;
+    overflow: hidden;
+    display: block;
+}
+
+.gambar-detail img
+{
+    width: 100%;
+    transition: all 0.5s;
+    transform: scale(1);
+    display: block;
+}
+
+.gambar-detail img:hover
+{
+    transform: scale(1.05);
+}
+
+/* Galery */
+
+.gambar-galery
+{
+    margin-bottom: 20px;
+    flex: 0 0 25%;
+    max-width: 25%;
+    padding-right: 10px;
+    padding-left: 10px;
+}
+
+.gambar-galery img
+{
+    width: 100%;
+    border-radius:10px
+}
+
+/* TestDrive */
+
+.drive-judul
+{
+    color: #363636;
+    margin: auto;
+    font-weight: bold ;
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.drive-self
+{
+    flex: 0 0 60%;
+    max-width: 60%;
+}
+
+.drive-self .form
+{
+    display: block;
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+.drive-comp
+{
+    flex: 0 0 40%;
+    max-width: 40%;
+}
+
+.drive-comp .form
+{
+    padding: 10px;
+}
+
+.label-individu
+{
+    color: #363636;
+    font-weight: 600;
+    font-size: 1.1em;
+}
+
+.label-info
+{
+    margin: auto;
+    text-align: center;
+    width: auto;
+    font-weight: bold;
+    font-size: 1rem;
+    color: white;
+    background: #363636;
+    padding:5px 10px;
+    border-radius: 5px;
+    margin-bottom: 20px;
+}
+
+.label-input
+{
+    color: #363636;
+    font-size: 1em;
+    margin-bottom: 5px;
+}
+
+.form-input
+{
+    width: 100%;
+    box-sizing: border-box;
+    border-radius: 5px;
+    border: 1px solid #333;
+    height: 30px;
+    padding: 5px;
+    margin-bottom: 10px;
+}
+
+.form-input.alamat
+{
+    height: 70px;
+}
+
+.tombol
+{
+    cursor: pointer;
+    color: white;
+    font-weight: 600;
+    font-size: 1rem;
+    width: 130px;
+    background: #363636;
+    padding: 8px;
+    border-radius: 20px;
+    outline: none;
+    border: none;
+    margin-bottom:20px;
+}
+
+.margin-kanan-10
+{
+    margin-right: 10px;
+}
+
+/* Radio */
+
+.radio-kebutuhan
+{
+    margin-bottom:20px ;
+}
+
+/* styling radio button */
+.radio
+{
+    position: relative;
+    display: inline-block;
+    margin-right: 20px;
+    outline: none;
+}
+.radio_rencana
+{
+    position: relative;
+    display: inline-block;
+    margin-right: 20px;
+    outline: none;
+    margin-bottom: 15px;
+}
+  
+/* styling radio button input */
+.radio input
+{
+position: absolute;
+opacity: 0;
+cursor: pointer;
+}
+.radio_rencana input
+{
+position: absolute;
+opacity: 0;
+cursor: pointer;
+}
+
+/* styling radio button label */
+.radio label
+{
+display: flex;
+align-items: center;
+cursor: pointer;
+font-size: 16px;
+position: relative;
+}
+.radio_rencana label
+{
+display: flex;
+align-items: center;
+cursor: pointer;
+font-size: 16px;
+position: relative;
+}
+
+/* styling radio button circle */
+.radio label::before
+{
+content: '';
+display: inline-block;
+width: 18px;
+height: 18px;
+border-radius: 50%;
+margin-right: 10px;
+background-color: #f1f1f1;
+border: 2px solid #ccc;
+}
+.radio_rencana label::before
+{
+content: '';
+display: inline-block;
+width: 18px;
+height: 18px;
+border-radius: 50%;
+margin-right: 10px;
+background-color: #f1f1f1;
+border: 2px solid #ccc;
+}
+
+/* styling radio button circle when checked */
+.radio input:checked + label::before {
+background-color: #2196f3;
+border-color: #2196f3;
+}
+.radio_rencana input:checked + label::before {
+background-color: #2196f3;
+border-color: #2196f3;
+}
+
+/* styling radio button dot */
+.radio label::after {
+content: '';
+display: inline-block;
+position: absolute;
+top: 6px;
+left: 7px;
+width: 6px;
+height: 6px;
+border-radius: 50%;
+opacity: 0;
+transition: opacity 0.2s ease;
+}
+.radio_rencana label::after {
+content: '';
+display: inline-block;
+position: absolute;
+top: 6px;
+left: 7px;
+width: 6px;
+height: 6px;
+border-radius: 50%;
+opacity: 0;
+transition: opacity 0.2s ease;
+}
+
+/* styling radio button dot when checked */
+.radio input:checked + label::after {
+opacity: 1;
+}
+.radio_rencana input:checked + label::after {
+opacity: 1;
+}
+
+.kolom-form-hp
+{
+    flex: 0 0 35%;
+    max-width: 35%;
+}
+.kolom-form-tgl
+{
+    flex: 0 0 40%;
+    max-width: 40%;
+}
+.kolom-form-wkt
+{
+    flex: 0 0 25%;
+    max-width: 25%;
+}
+
+.kolom-form-2
+{
+    flex: 0 0 50%;
+    max-width: 50%;
+}
+
+.jarak5
+{
+    padding: 0 10px;
+}
+
+.jarak-kiri
+{
+    padding-left: 10px;
+}
+
+.derek-vektor
+{
+    display: flex;
+    max-width: 229px;
+    margin: auto;
+    margin-bottom: 25px;
+}
+
+/* Admin ============================================================ */
+
+.container
+{
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.header-admin
+{
+    display: flex;
+    flex-direction: column;
+    background: #363636;
+    align-items: center;
+    justify-content: center;
+    padding: 30px 0;
+    font-size: 1.5rem;
+    color: white;
+    border-bottom: 1px solid #222;
+    border-bottom-left-radius: 30px;
+    border-bottom-right-radius: 30px;
+ /* box-shadow:  x   y  blr bsr rgba(255, 49, 49, 0.25); */
+    box-shadow: 0px 5px 5px 0px rgb(0 0 0 / 25%);
+    margin-bottom: 20px;
+}
+
+.bingkai-profil
+{
+    width: 100px;
+    height: 100px;
+    border-radius: 100px;
+    border: 2px solid white;
+    overflow: hidden;
+    margin-bottom: 10px;
+}
+
+.bingkai-profil img{
+    z-index:0;
+    object-fit: contain;
+    width: 100px;
+}
+
+.menu-admin
+{
+    padding: 15px 10px;
+}
+
+.kolom-menu-admin
+{
+    flex: 0 0 50%;
+    max-width: 50%;
+    padding: 0 10px;
+}
+
+.kotak-menu-admin
+{
+    background: #363636;
+    padding: 10px;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    box-shadow: 0px 5px 5px 0px rgb(0 0 0 / 25%);
+    margin-bottom: 20px;
+}
+
+.kotak-menu-admin img
+{
+    max-width: 110px;
+}
+
+.kotak-menu-admin p
+{
+    font-size: .8rem;
+    font-weight: 600;
+}
+
+.footer-admin
+{
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+}
+
+.icon-menu-admin
+{
+    width: 50px;
+    height: 50px;
+    margin-bottom: 10px;
+}
+
+.baris-label
+{
+    margin-top: -45px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.label-kondisi
+{
+    color: #222;
+    font-size: 1.1rem;
+    font-weight: 600;
+    text-align: center;
+    width: 150px;
+    background: white;
+    padding: 10px 0;
+    border-radius: 30px;
+    border: 1px solid #333;
+    box-shadow: 0px 3px 5px 0px rgb(0 0 0 / 25%);
+}
+
+.mobil-detail
+{
+    font-size: 10px;
+    width: 100%;
+}
+
+.kolom-detail-mobil-field
+{
+    flex: 0 0 44%;
+    max-width: 44%;
+}
+
+.kolom-detail-mobil-value
+{
+    flex: 0 0 56%;
+    max-width: 56%;
+}
+
+/* responsive */
+
+@media (max-width:991px)
+{
+    .carousel-root
+    {
+        margin-top: 65px;
+    }
+
+    .navigator{
+        position: fixed;
+        top:0;
+    }
+
+    .menu
+    {
+        display: none;
+    }
+
+    .menu-toggle
+    {
+        display: flex;
+    }
+
+    .menu_open
+    {
+        opacity: 1!important;
+        transform: translateX(0)!important;
+    }
+
+    .info.menu
+    {
+        position: absolute;
+        right: 0;
+        top: 66px;
+        width:80px;
+        height:100vh;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        background: #363636;
+        padding: 10px;
+        z-index: 1;
+        transform: translateX(100%);
+        transition: all 1s;
+        opacity: 0;
+        box-shadow: 0px 3px 5px 0px rgb(0 0 0 / 25%);
+    }
+    
+    .info.menu .info-item
+    {
+        width: 100%;
+        display: block;
+        padding: 0;
+        margin-bottom:30px
+    }
+
+    .info.menu .menu-box
+    {
+        padding: 0;
+    }
+
+    .info.menu .info-inner{
+        padding: 0;
+    }
+
+    .info.menu .menu-box{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .content-mobil
+    {
+        flex: 0 0 100%;
+        max-width: 100%;
+    }
+
+    .content-testi
+    {
+        flex: 0 0 100%;
+        max-width: 100%;
+    }
+
+    .mobil-menu
+    {
+        flex: 0 0 50%;
+        max-width: 50%;
+    }
+
+    .gambar-galery
+    {
+        flex: 0 0 50%;
+        max-width: 50%;
+    }
+
+    .drive-self
+    {
+        flex: 0 0 100%;
+        max-width: 100%;
+    }
+    .drive-comp
+    {
+        flex: 0 0 100%;
+        max-width: 100%;
+    }
+
+    .reverse-kolom
+    {
+        flex-direction: column-reverse!important;
+    }
+}

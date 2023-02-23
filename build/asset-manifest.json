@@ -1,0 +1,35 @@
+{
+  "files": {
+    "main.css": "/static/css/main.b289f68d.css",
+    "main.js": "/static/js/main.b4f843e6.js",
+    "static/js/787.fd30c810.chunk.js": "/static/js/787.fd30c810.chunk.js",
+    "static/media/slide-car5.jpg": "/static/media/slide-car5.65a4674650e6579deeae.jpg",
+    "static/media/slide-car3.jpg": "/static/media/slide-car3.d4356db59612cb7f3ad1.jpg",
+    "static/media/slide-car1.jpg": "/static/media/slide-car1.069f7db4b97000ad5a86.jpg",
+    "static/media/slide-car4.jpg": "/static/media/slide-car4.c62ff38a5fe167eb8bf1.jpg",
+    "static/media/slide-car2.jpg": "/static/media/slide-car2.d6bb3bd27b589eb779e8.jpg",
+    "static/media/fitur_rush0.jpg": "/static/media/fitur_rush0.c031f14f178d27ddfd03.jpg",
+    "static/media/testimoni3.jpg": "/static/media/testimoni3.b396de3f2d3856facac2.jpg",
+    "static/media/testimoni4.jpg": "/static/media/testimoni4.32b4a4449bcd7e90cb58.jpg",
+    "static/media/galery4.jpg": "/static/media/galery4.7911a27a8c3827fd459c.jpg",
+    "static/media/testimoni1.jpg": "/static/media/testimoni1.0a5016f26b11450ecf20.jpg",
+    "static/media/testimoni2.jpg": "/static/media/testimoni2.17714ea78c650b0338f4.jpg",
+    "static/media/galery6.jpg": "/static/media/galery6.cc2eca8e9695c6ff8e27.jpg",
+    "static/media/galery2.jpg": "/static/media/galery2.363ea5a1146cc81fd93c.jpg",
+    "static/media/galery1.jpg": "/static/media/galery1.e63b354861ff209abbd2.jpg",
+    "static/media/galery3.jpg": "/static/media/galery3.0b3e75188ac4c8c87823.jpg",
+    "static/media/galery5.jpg": "/static/media/galery5.e4e96947b856d57db4fa.jpg",
+    "static/media/fitur_rush1.jpg": "/static/media/fitur_rush1.c0419864a1175d16dc5f.jpg",
+    "static/media/fitur_rush2.jpg": "/static/media/fitur_rush2.b90ef330525de543d6d8.jpg",
+    "static/media/fitur_rush3.jpg": "/static/media/fitur_rush3.b24b23987b154d8c3841.jpg",
+    "static/media/car-pajero.jpg": "/static/media/car-pajero.af3f00f9f29d04830bbe.jpg",
+    "index.html": "/index.html",
+    "main.b289f68d.css.map": "/static/css/main.b289f68d.css.map",
+    "main.b4f843e6.js.map": "/static/js/main.b4f843e6.js.map",
+    "787.fd30c810.chunk.js.map": "/static/js/787.fd30c810.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.b289f68d.css",
+    "static/js/main.b4f843e6.js"
+  ]
+}
