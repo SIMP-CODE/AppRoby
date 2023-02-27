@@ -1,7 +1,8 @@
-import icon1 from "../assets/img/nav1.jpg"
-import icon2 from "../assets/img/nav2.jpg"
-import icon3 from "../assets/img/nav3.jpg"
-import icon4 from "../assets/img/nav4.jpg"
+import iconwa from "../assets/img/nav-wa.png"
+import icon2 from "../assets/img/nav2.png"
+import icon3 from "../assets/img/nav3.png"
+import icon4 from "../assets/img/nav4.png"
+import icon5 from "../assets/img/nav6.png"
 import "../assets/css/style.css"
 import React, { useState } from 'react';
 
@@ -19,16 +20,15 @@ function Navigator()
                 <div className="info">
                     <div className="info-item">
                         <div className="info-inner">
-                            <div className="info-sales">
-                                <img src={icon1} alt="icon1" />
+                            <a href="#" className="info-sales">
+                                <img src={iconwa} alt="icon1" />
                                 <div className="sales-name">
                                     <span>
-                                        HUB
-                                        <br/>
-                                        <span className="name">RENDI PRATAMA</span>
+                                        <p>HUB</p>
+                                        <p className="name">RENDI PRATAMA</p>
                                     </span>
                                 </div>
-                            </div>
+                            </a>
                         </div>
                     </div>
 
@@ -50,6 +50,14 @@ function Navigator()
                 </div>
 
                 <div className={`info menu ${isOpen ? 'menu_open' : ''}`} >
+                    <div className="info-item">
+                        <div className="info-inner">
+                            <a href="/galery" className="menu-box">
+                                <img src={icon5} alt="icon" />
+                                <span>MOBIL BEKAS</span>
+                            </a>
+                        </div>
+                    </div>
                     <div className="info-item">
                         <div className="info-inner">
                             <a href="/galery" className="menu-box">

@@ -28,6 +28,7 @@
 .navigator
 {
     display: flex;
+    height: 70px;
     background: #363636;
     justify-content: space-between;
     align-items: center;
@@ -38,7 +39,7 @@
     color: white;
     font-weight: 600;
     font-size: 15px;
-    position: sticky;
+    position: initial;
     z-index: 3;
 }
 
@@ -62,6 +63,7 @@
 
 .info-sales
 {
+    color :white!important;
     display: flex;
     align-items: center;
 }
@@ -81,9 +83,9 @@
 {
     display: flex;
     align-items: center;
-    padding: 5px 15px;
+    padding: 3px 8px;
     border: 1px solid white;
-    border-radius: 10px;
+    border-radius: 8px;
     font-size: 12px;
 }
 
@@ -106,7 +108,7 @@
 
 .menu-box span
 {
-    font-size: 11px;
+    font-size: 10px;
 }
 
 /* Hamburger Menu */
@@ -228,6 +230,7 @@
     color: white;
     border-radius: 20px;
     font-weight: bold;
+    padding: 3px;
 }
 
 .content-testi
@@ -237,11 +240,10 @@
 }
 .list-testi
 {
-    padding: 10px;
+    padding: 30px 10px;
     background-color: #363636;
     color: #fff;
     height: 100%;
-    border-left: 1px solid #ddd;
 }
 .box-testi
 {
@@ -405,6 +407,11 @@
     outline: none;
     border: none;
     margin-bottom:20px;
+}
+
+.penuh
+{
+    width: 100%;
 }
 
 .margin-kanan-10
@@ -630,6 +637,7 @@ opacity: 1;
     flex: 0 0 50%;
     max-width: 50%;
     padding: 0 10px;
+    margin-bottom: 15px;
 }
 
 .kotak-menu-admin
@@ -644,6 +652,7 @@ opacity: 1;
     color: white;
     box-shadow: 0px 5px 5px 0px rgb(0 0 0 / 25%);
     margin-bottom: 20px;
+    height: 100%;
 }
 
 .kotak-menu-admin img
@@ -699,16 +708,158 @@ opacity: 1;
     width: 100%;
 }
 
-.kolom-detail-mobil-field
+.kolom-detail-info-mobil
 {
-    flex: 0 0 44%;
-    max-width: 44%;
+    width: 100%;
+    text-align: center;
+    margin-bottom: 5px;
 }
 
-.kolom-detail-mobil-value
+.notif-upload
 {
-    flex: 0 0 56%;
-    max-width: 56%;
+    color: #2196f3;
+    font-size: 1rem;
+    margin-bottom: 10px;
+}
+
+.tombol-menu-tambah-mobil
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.tombol-menu-tambah-mobil .icon_tambah
+{
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+.tombol-menu-tambah-mobil .text_tambah
+{
+    font-size: 1rem;
+}
+
+.gambar-tambah
+{
+    width: 50px;
+}
+
+.bariss
+{
+    margin-top: 10px;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+}
+
+.kolomm-tombol-fit
+{
+    flex: 0 0 50%;
+    max-width: 50%;
+}
+
+.tombol-fit
+{
+    margin: auto;
+    width: 65px;
+    display: block;
+    background: white;
+    border: none;
+    font-size: .8rem;
+    font-weight: 600;
+    color: black;
+    padding: 5px;
+    box-sizing: border-box;
+    text-align: center;
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+.login-form
+{
+    display: block;
+    padding: 30px 10px;
+    box-sizing: border-box;
+    text-align: center;
+}
+
+.wrap-form-login
+{
+    display: block;
+    margin: auto;
+    padding: 15px 10px;
+    max-width: 400px;
+    box-sizing: border-box;
+}
+
+.login-form h2
+{
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+.login-form-row
+{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    flex-direction: row;
+}
+
+.login-form-col-icon
+{
+    flex: 0 0 15%;
+    max-width: 15%;
+}
+
+.icon-login
+{
+    display: flex;
+    align-items:center;
+}
+
+.login-form-col-icon img
+{
+    width: 35px;
+}
+
+.login-form-col-form
+{
+    flex: 0 0 85%;
+    max-width: 85%;
+}
+
+.login-form-row input
+{
+    width: 100%;
+    border: 1px solid #363636;
+    padding: 5px;
+    border-radius: 10px;
+}
+
+.wrap-tombol-login
+{
+    display: block;
+    max-width: 400px;
+    box-sizing: border-box;
+    margin: auto;
+}
+
+.tombol-login
+{
+    cursor: pointer;
+    color: white;
+    font-weight: 600;
+    font-size: 1rem;
+    width: 130px;
+    background: #363636;
+    padding: 8px;
+    border-radius: 20px;
+    outline: none;
+    border: none;
+    margin-top:40px;
+    cursor: pointer;
 }
 
 /* responsive */
@@ -717,7 +868,7 @@ opacity: 1;
 {
     .carousel-root
     {
-        margin-top: 65px;
+        margin-top: 70px;
     }
 
     .navigator{
@@ -745,7 +896,7 @@ opacity: 1;
     {
         position: absolute;
         right: 0;
-        top: 66px;
+        top: 69px;
         width:80px;
         height:100vh;
         display: flex;
@@ -759,7 +910,7 @@ opacity: 1;
         opacity: 0;
         box-shadow: 0px 3px 5px 0px rgb(0 0 0 / 25%);
     }
-    
+
     .info.menu .info-item
     {
         width: 100%;
@@ -768,18 +919,16 @@ opacity: 1;
         margin-bottom:30px
     }
 
-    .info.menu .menu-box
-    {
-        padding: 0;
-    }
-
     .info.menu .info-inner{
         padding: 0;
     }
 
     .info.menu .menu-box{
+        padding: 0;
         display: flex;
         flex-direction: column;
+        align-items: center;
+        text-align: center;
     }
 
     .content-mobil

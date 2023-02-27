@@ -1,6 +1,6 @@
 import car_new from "../../assets/img/car/new.png"
 import car_old from "../../assets/img/car/old.png"
-import icon2 from "../../assets/img/nav2.jpg"
+import icon2 from "../../assets/img/nav2.png"
 
 function MenuAdmin()
 {
