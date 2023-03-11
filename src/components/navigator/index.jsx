@@ -1,4 +1,5 @@
 import iconwa from "../assets/img/nav-wa.png"
+import icon0 from "../assets/img/nav0.png"
 import icon2 from "../assets/img/nav2.png"
 import icon3 from "../assets/img/nav3.png"
 import icon4 from "../assets/img/nav4.png"
@@ -50,6 +51,14 @@ function Navigator()
                 </div>
 
                 <div className={`info menu ${isOpen ? 'menu_open' : ''}`} >
+                    <div className="info-item">
+                        <div className="info-inner">
+                            <a href="/" className="menu-box">
+                                <img src={icon0} alt="icon" />
+                                <span>Home</span>
+                            </a>
+                        </div>
+                    </div>
                     <div className="info-item">
                         <div className="info-inner">
                             <a href="/galery" className="menu-box">

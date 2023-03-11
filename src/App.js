@@ -14,12 +14,21 @@ import FormGaleri from "./pages/admin/form/formgaleri"
 // Login
 import Login from "./pages/login"
 
+// Import CSS
+import './css/style.css'
+
+// Import Page
+import Awal from './views/awal'
+
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 function App() {
   return (
-    <>
+    <div className="page">
     <Router>
       <Routes>
+
+        <Route path="/awal" exact element={<Awal/>} />
+
         <Route path="/" exact element={<Home/>} />      
         <Route path="/detail" exact element={<Detail/>} />
         <Route path="/galery" exact element={<Galery/>} />
@@ -37,7 +46,7 @@ function App() {
         <Route path="/Coba" exact element={<Coba/>} />
       </Routes>
     </Router>
-    </>
+    </div>
   );
 }
 
