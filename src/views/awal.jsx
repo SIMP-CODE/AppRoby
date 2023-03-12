@@ -155,7 +155,53 @@ function AwalPage()
             </div>
             <div className="bottom">
                 <div className="bottom-block">
-                    
+                    <div className="bottom-row">
+                        <div className="bottom-col">
+                            <div className="bottom-col-block">
+                                <div className="bottom-item-head">
+                                    <p>USEFUL LINKS</p>
+                                </div>
+                                <div className="bottom-link">
+                                    <div className="bottom-icon-link">-</div>
+                                    <p>TEST DRIVE</p>
+                                </div>
+                                <div className="bottom-link">
+                                    <div className="bottom-icon-link">-</div>
+                                    <p>INFO DEREK</p>
+                                </div>
+                                <div className="bottom-link">
+                                    <div className="bottom-icon-link">-</div>
+                                    <p>GALERI</p>
+                                </div>
+                                <div className="bottom-link">
+                                    <div className="bottom-icon-link">-</div>
+                                    <p>MOBIL BEKAS</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div className="bottom-col">
+                            <div className="bottom-col-block">
+                                <div className="bottom-item-head">
+                                    <p>TOYOTA MEDAN</p>
+                                </div>
+                                <div className="bottom-link">
+                                    <p>Jln. Balai Kota No. 2 Medan</p>
+                                </div>
+                                <a href="" className='bottom-socmed' target="_blank">
+                                    <div className="bottom-icon-socmed">
+                                        <img src={process.env.PUBLIC_URL + '/img/icon/link-fb.png'} alt="Toyota_Tagline" />
+                                    </div>
+                                    <p>ROBY</p>
+                                </a>
+                                <a href="" className='bottom-socmed' target="_blank">
+                                    <div className="bottom-icon-socmed">
+                                        <img src={process.env.PUBLIC_URL + '/img/icon/link-ig.png'} alt="Toyota_Tagline" />
+                                    </div>
+                                    <p>ROBY</p>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </>
