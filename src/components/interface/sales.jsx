@@ -5,7 +5,7 @@ function Sales()
             <div className="mid-info">
                 <div className="mid-info-row">
                     <div className="mid-info-item">
-                        ROBY
+                        ROBY NASUTION
                     </div>
                     <div className="mid-info-item">
                         0822-9999-0000

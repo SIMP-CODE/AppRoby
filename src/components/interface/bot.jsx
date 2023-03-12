@@ -12,27 +12,27 @@ function Bot()
                                 <div className="bottom-item-head">
                                     <p>USEFUL LINKS</p>
                                 </div>
-                                <Link to="/" className="bottom-link">
+                                <Link to="/test-drive" className="bottom-link">
                                     <div className="bottom-icon-link">-</div>
                                     <p>TEST DRIVE</p>
                                 </Link>
-                                <Link to="/" className="bottom-link">
-                                    <div className="bottom-icon-link">-</div>
-                                    <p>INFO DEREK</p>
-                                </Link>
-                                <Link to="/" className="bottom-link">
+                                <Link to="/galery" className="bottom-link">
                                     <div className="bottom-icon-link">-</div>
                                     <p>GALERI</p>
                                 </Link>
                                 <Link to="/" className="bottom-link">
                                     <div className="bottom-icon-link">-</div>
-                                    <p>MOBIL BEKAS</p>
+                                    <p>MOBIL BARU</p>
                                 </Link>
                                 <Link to="/" className="bottom-link">
                                     <div className="bottom-icon-link">-</div>
+                                    <p>MOBIL BEKAS</p>
+                                </Link>
+                                <Link to="/booking-service" className="bottom-link">
+                                    <div className="bottom-icon-link">-</div>
                                     <p>BOOKING SERVICE</p>
                                 </Link>
-                                <Link to="/" className="bottom-link">
+                                <Link to="/simulasi-credit" className="bottom-link">
                                     <div className="bottom-icon-link">-</div>
                                     <p>SIMULASI CREDIT</p>
                                 </Link>
@@ -41,7 +41,7 @@ function Bot()
                         <div className="bottom-col">
                             <div className="bottom-col-block">
                                 <div className="bottom-item-head">
-                                    <p>TOYOTA MEDAN</p>
+                                    <p>JUAL BELI MOBIL TOYOTA MEDAN</p>
                                 </div>
                                 <div className="bottom-link">
                                     <p>Jln. Balai Kota No. 2 Medan</p>
@@ -50,13 +50,13 @@ function Bot()
                                     <div className="bottom-icon-socmed">
                                         <img src={process.env.PUBLIC_URL + '/img/icon/link-fb.png'} alt="Toyota_Tagline" />
                                     </div>
-                                    <p>ROBY</p>
+                                    <p>JUAL BELI MOBIL TOYOTA MEDAN</p>
                                 </a>
                                 <a href="https://instagram.com" className='bottom-socmed' target="_blank">
                                     <div className="bottom-icon-socmed">
                                         <img src={process.env.PUBLIC_URL + '/img/icon/link-ig.png'} alt="Toyota_Tagline" />
                                     </div>
-                                    <p>ROBY</p>
+                                    <p>JUAL BELI MOBIL TOYOTA MEDAN</p>
                                 </a>
                             </div>
                         </div>

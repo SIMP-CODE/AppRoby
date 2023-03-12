@@ -8,16 +8,22 @@ class Slide extends Component {
         return(
             <Carousel autoPlay={300} infiniteLoop={true}>
                 <div>
-                    <img src={process.env.PUBLIC_URL + '/img/slide/car-slide1.png'} alt="slide"/>
+                    <img src={process.env.PUBLIC_URL + '/img/slide/car-slide2.png'} alt="slide"/>
                 </div>
                 <div>
-                    <img src={process.env.PUBLIC_URL + '/img/slide/car-slide1.png'} alt="slide"/>
+                    <img src={process.env.PUBLIC_URL + '/img/slide/car-slide3.png'} alt="slide"/>
                 </div>
                 <div>
-                    <img src={process.env.PUBLIC_URL + '/img/slide/car-slide1.png'} alt="slide"/>
+                    <img src={process.env.PUBLIC_URL + '/img/slide/car-slide4.png'} alt="slide"/>
                 </div>
                 <div>
-                    <img src={process.env.PUBLIC_URL + '/img/slide/car-slide1.png'} alt="slide"/>
+                    <img src={process.env.PUBLIC_URL + '/img/slide/car-slide5.png'} alt="slide"/>
+                </div>
+                <div>
+                    <img src={process.env.PUBLIC_URL + '/img/slide/car-slide6.png'} alt="slide"/>
+                </div>
+                <div>
+                    <img src={process.env.PUBLIC_URL + '/img/slide/car-slide7.png'} alt="slide"/>
                 </div>
                 <div>
                     <img src={process.env.PUBLIC_URL + '/img/slide/car-slide1.png'} alt="slide"/>

@@ -20,23 +20,23 @@ function Top()
                                     <div className="submenu-text">TEST DRIVE</div>
                                     <div className="submenu-icon"><img src={process.env.PUBLIC_URL + '/img/icon/icon-1.png'} alt="Toyota_Tagline" /></div>
                                 </Link>
-                                <Link to="/" className="submenu-item">
-                                    <div className="submenu-text">INFO DEREK</div>
-                                    <div className="submenu-icon"><img src={process.env.PUBLIC_URL + '/img/icon/icon-2.png'} alt="Toyota_Tagline" /></div>
-                                </Link>
-                                <Link to="" className="submenu-item">
+                                <Link to="/galery" className="submenu-item">
                                     <div className="submenu-text">GALERI</div>
                                     <div className="submenu-icon"><img src={process.env.PUBLIC_URL + '/img/icon/icon-3.png'} alt="Toyota_Tagline" /></div>
+                                </Link>
+                                <Link to="" className="submenu-item">
+                                    <div className="submenu-text">MOBIL BARU</div>
+                                    <div className="submenu-icon"><img src={process.env.PUBLIC_URL + '/img/icon/icon-7.png'} alt="Toyota_Tagline" /></div>
                                 </Link>
                                 <Link to="" className="submenu-item">
                                     <div className="submenu-text">MOBIL BEKAS</div>
                                     <div className="submenu-icon"><img src={process.env.PUBLIC_URL + '/img/icon/icon-4.png'} alt="Toyota_Tagline" /></div>
                                 </Link>
-                                <Link to="" className="submenu-item">
+                                <Link to="/booking-service" className="submenu-item">
                                     <div className="submenu-text">BOOKING SERVICE</div>
                                     <div className="submenu-icon"><img src={process.env.PUBLIC_URL + '/img/icon/icon-5.png'} alt="Toyota_Tagline" /></div>
                                 </Link>
-                                <Link to="" className="submenu-item">
+                                <Link to="/simulasi-credit" className="submenu-item">
                                     <div className="submenu-text">SIMULASI CREDIT</div>
                                     <div className="submenu-icon"><img src={process.env.PUBLIC_URL + '/img/icon/icon-6.png'} alt="Toyota_Tagline" /></div>
                                 </Link>

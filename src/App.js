@@ -15,6 +15,9 @@ import './css/style.css'
 // Import Page Roby
 import Awal from './views/home'
 import Coba from './views/test-drive'
+import Foto from './views/galery'
+import Service from './views/service'
+import Credit from './views/credit'
 
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 function App() {
@@ -24,8 +27,11 @@ function App() {
       <Routes>
         <Route path="/" exact element={<Awal/>} />
         <Route path="/test-drive" exact element={<Coba/>} />
+        <Route path="/galery" exact element={<Foto/>} />
+        <Route path="/booking-service" exact element={<Service/>} />
+        <Route path="/simulasi-credit" exact element={<Credit/>} />
 
-        <Route path="/galery" exact element={<Galery/>} />
+        <Route path="/galeri" exact element={<Galery/>} />
 
         <Route path="/admin" exact element={<Admin/>} />
         <Route path="/mobil-baru" exact element={<MobilBaru/>} />
