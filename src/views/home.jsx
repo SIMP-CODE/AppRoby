@@ -1,56 +1,15 @@
+import Top from "../components/interface/top"
 import Slider from '../components/slider'
+import Info from "../components/interface/sales"
+import Bottom from "../components/interface/bot"
 
 function AwalPage()
 {
     return(
         <>
-            <div className="top-header">
-                <div className="row-top-header">
-                    <div className="logo-top-header">
-                        <img src={process.env.PUBLIC_URL + '/img/icon/logo-header.png'} alt="Toyota_Tagline" />
-                    </div>
-                    <div className="menu-top-header">
-                        <div className="menu-text">PILIHAN</div>
-                        <div className="menu-icon">
-                            <img src={process.env.PUBLIC_URL + '/img/icon/icon-menu.png'} alt="Toyota_Tagline" />
-                        </div>
-                        <div className="submenu-top-header">
-                            <div className="submenu-col">
-                                <div className="submenu-item">
-                                    <div className="submenu-text">TEST DRIVE</div>
-                                    <div className="submenu-icon"><img src={process.env.PUBLIC_URL + '/img/icon/icon-1.png'} alt="Toyota_Tagline" /></div>
-                                </div>
-                                <div className="submenu-item">
-                                    <div className="submenu-text">INFO DEREK</div>
-                                    <div className="submenu-icon"><img src={process.env.PUBLIC_URL + '/img/icon/icon-2.png'} alt="Toyota_Tagline" /></div>
-                                </div>
-                                <div className="submenu-item">
-                                    <div className="submenu-text">GALERI</div>
-                                    <div className="submenu-icon"><img src={process.env.PUBLIC_URL + '/img/icon/icon-3.png'} alt="Toyota_Tagline" /></div>
-                                </div>
-                                <div className="submenu-item">
-                                    <div className="submenu-text">MOBIL BEKAS</div>
-                                    <div className="submenu-icon"><img src={process.env.PUBLIC_URL + '/img/icon/icon-4.png'} alt="Toyota_Tagline" /></div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
+            <Top />
             <Slider />
-            <div className="mid-info">
-                <div className="mid-info-row">
-                    <div className="mid-info-item">
-                        RENDI PRATAMA
-                    </div>
-                    <div className="mid-info-item">
-                        0822-9999-0000
-                    </div>
-                    <div className="mid-info-item">
-                        Jln. Balai Kota No.2 A
-                    </div>
-                </div>
-            </div>
+            <Info />
             <div className="content">
                 <div className="content-row">
                     <div className="content-col-car">
@@ -153,57 +112,7 @@ function AwalPage()
                     </div>
                 </div>
             </div>
-            <div className="bottom">
-                <div className="bottom-block">
-                    <div className="bottom-row">
-                        <div className="bottom-col">
-                            <div className="bottom-col-block">
-                                <div className="bottom-item-head">
-                                    <p>USEFUL LINKS</p>
-                                </div>
-                                <div className="bottom-link">
-                                    <div className="bottom-icon-link">-</div>
-                                    <p>TEST DRIVE</p>
-                                </div>
-                                <div className="bottom-link">
-                                    <div className="bottom-icon-link">-</div>
-                                    <p>INFO DEREK</p>
-                                </div>
-                                <div className="bottom-link">
-                                    <div className="bottom-icon-link">-</div>
-                                    <p>GALERI</p>
-                                </div>
-                                <div className="bottom-link">
-                                    <div className="bottom-icon-link">-</div>
-                                    <p>MOBIL BEKAS</p>
-                                </div>
-                            </div>
-                        </div>
-                        <div className="bottom-col">
-                            <div className="bottom-col-block">
-                                <div className="bottom-item-head">
-                                    <p>TOYOTA MEDAN</p>
-                                </div>
-                                <div className="bottom-link">
-                                    <p>Jln. Balai Kota No. 2 Medan</p>
-                                </div>
-                                <a href="" className='bottom-socmed' target="_blank">
-                                    <div className="bottom-icon-socmed">
-                                        <img src={process.env.PUBLIC_URL + '/img/icon/link-fb.png'} alt="Toyota_Tagline" />
-                                    </div>
-                                    <p>ROBY</p>
-                                </a>
-                                <a href="" className='bottom-socmed' target="_blank">
-                                    <div className="bottom-icon-socmed">
-                                        <img src={process.env.PUBLIC_URL + '/img/icon/link-ig.png'} alt="Toyota_Tagline" />
-                                    </div>
-                                    <p>ROBY</p>
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
+            <Bottom />
         </>
     )
 }

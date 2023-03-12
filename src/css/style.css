@@ -5,7 +5,7 @@
 :root
 {
     --primary:#0C1014;
-    --secondary:#363E41;
+    --secondary:#343C3F;
     --default:#ffffff;
     --simple:#4A4327;
 }
@@ -154,6 +154,7 @@
     justify-content: space-between;
     align-items: center;
     padding: 10px 15px 10px 20px;
+    color: var(--default);
 }
 
 .submenu-item:hover
@@ -179,6 +180,7 @@
 
 .carousel-root
 {
+    margin-top: 70px!important;
     width: 100%;
     position: relative;
     z-index: -1;
@@ -191,7 +193,7 @@
     top: 0;
     display: block;
     padding: 0 10px;
-    background: var(--simple);
+    background:var(--secondary);
     color: var(--default);
     font-weight: 600;
     font-size: 16px;
@@ -446,7 +448,7 @@
     align-items: center;
     display: flex;
     flex-direction: row;
-    font-size: 17px;
+    font-size: 16px;
     padding: 5px;
     color: white;
 }
@@ -484,6 +486,20 @@
     height: 100%;
 }
 
+.bottom-down
+{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-sizing: border-box;
+    padding: 15px;
+    font-size: 14px;
+    text-align: center;
+    background: var(--primary);
+    color: var(--default);
+}
+
 /* RESPONSIVE */
 
 /* R-Desktop */
@@ -519,10 +535,6 @@
 /* R-Mobile */
 @media (max-width:576px)
 {
-    .carousel-root
-    {
-        margin-top: 70px;
-    }
     .menu-top-header
     {
         width: auto;

@@ -1,9 +1,4 @@
-import Home from "./pages/home";
-import Detail from "./pages/detail";
 import Galery from "./pages/galery"
-import TestDrive from "./pages/test-drive"
-import InfoDerek from "./pages/info-derek"
-import Coba from "./pages/coba"
 
 // Admin
 import Admin from "./pages/admin/dashboard"
@@ -17,8 +12,9 @@ import Login from "./pages/login"
 // Import CSS
 import './css/style.css'
 
-// Import Page
-import Awal from './views/awal'
+// Import Page Roby
+import Awal from './views/home'
+import Coba from './views/test-drive'
 
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 function App() {
@@ -26,14 +22,10 @@ function App() {
     <div className="page">
     <Router>
       <Routes>
+        <Route path="/" exact element={<Awal/>} />
+        <Route path="/test-drive" exact element={<Coba/>} />
 
-        <Route path="/awal" exact element={<Awal/>} />
-
-        <Route path="/" exact element={<Home/>} />      
-        <Route path="/detail" exact element={<Detail/>} />
         <Route path="/galery" exact element={<Galery/>} />
-        <Route path="/test-drive" exact element={<TestDrive/>} />
-        <Route path="/info-derek" exact element={<InfoDerek/>} />
 
         <Route path="/admin" exact element={<Admin/>} />
         <Route path="/mobil-baru" exact element={<MobilBaru/>} />
@@ -43,7 +35,6 @@ function App() {
 
         <Route path="/login" exact element={<Login/>} />
 
-        <Route path="/Coba" exact element={<Coba/>} />
       </Routes>
     </Router>
     </div>
