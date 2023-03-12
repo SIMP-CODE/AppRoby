@@ -320,6 +320,35 @@
     border-radius: 20px;
 }
 
+.sales-text-title
+{
+    margin-top: 10px;
+    color: white;
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.sales-text-info
+{
+    font-size: 18px;
+    color: white;
+}
+
+.sales-test-title
+{
+    margin-top: 5px;
+    color: white;
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.sales-test-info
+{
+    font-size: 14px;
+    color: white;
+}
+
+
 .sales-profile-img
 {
     margin: auto;
@@ -327,6 +356,7 @@
     width: 100%;
     display: flex;
     align-items: center;
+    flex-direction: column;
     justify-content: center;
     overflow: hidden;
 }
@@ -351,11 +381,13 @@
 {
     display: flex;
     align-items: center;
+    flex-direction: column;
     flex: 0 0 50%;
     max-width: 50%;
     padding: 5px;
     box-sizing: border-box;
     overflow: hidden;
+    text-align: center;
 }
 
 .sales-testi-col img
@@ -498,6 +530,88 @@
     color: var(--default);
 }
 
+.car-detail
+{
+    width: 100%;
+    display: block;
+    background: #ccc;
+    padding: 20px;
+    box-sizing: border-box;
+    border-radius: 20px;
+    border: 1px solid #ddd;
+}
+
+.car-title-detail
+{
+    font-size: 22px;
+    font-weight: 600;
+    text-align: center;
+}
+
+.car-start
+{
+    margin: 2px 0;
+    font-size: 17px;
+    text-align: center;
+}
+
+.car-price-detail
+{
+    margin: auto;
+    padding: 5px;
+    max-width: 250px;
+    border-radius: 15px;
+    display: block;
+    box-sizing: border-box;
+    background: #363636;
+    color: white;
+    text-align: center;
+}
+
+.car-detail-row
+{
+    margin-top: 30px;
+    margin-bottom: 30px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    box-sizing: border-box;
+}
+
+.car-detail-button
+{
+    max-width: 200px;
+    margin: auto;
+    display: block;
+    box-sizing: border-box;
+    padding: 5px;
+    background: #363636;
+    color: white;
+    text-align: center;
+    border: 2px solid #2b2b2b;
+    border-radius: 5px;
+}
+
+.car-detail-button:hover
+{
+    border: 2px solid #363636;
+    background: #e0e0e0;
+    color: #363636;
+    font-weight: 600;
+}
+
+.car-detail-col
+{
+    flex:0 0 33.33%;
+    max-width:33.33%;
+}
+
+.car-detail-col img
+{
+    width: 100%;
+}
+
 /* RESPONSIVE */
 
 /* R-Desktop */
@@ -527,6 +641,11 @@
     {
         flex: 0 0 100%;
         max-width: 100% ;
+    }
+    .car-detail-col
+    {
+        flex:0 0 100%;
+        max-width:100%;
     }
 }
 

@@ -18,6 +18,7 @@ import Coba from './views/test-drive'
 import Foto from './views/galery'
 import Service from './views/service'
 import Credit from './views/credit'
+import Detil from './views/detail.jsx'
 
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 function App() {
@@ -30,6 +31,7 @@ function App() {
         <Route path="/galery" exact element={<Foto/>} />
         <Route path="/booking-service" exact element={<Service/>} />
         <Route path="/simulasi-credit" exact element={<Credit/>} />
+        <Route path="/detail-mobil" exact element={<Detil/>} />
 
         <Route path="/galeri" exact element={<Galery/>} />
 

@@ -16,7 +16,7 @@ function AwalPage()
                     <div className="content-col-car">
                         <div className="content-car-row">
                             <div className="content-car-col">
-                                <div className="car-item">
+                                <a href="/detail-mobil" className="car-item">
                                     <div className="car-img">
                                         <img src={process.env.PUBLIC_URL + '/img/car/car1.png'} alt="Toyota_Tagline" />
                                     </div>
@@ -25,10 +25,10 @@ function AwalPage()
                                     <div className="car-price">
                                         <p>Rp. 999.999.000</p>
                                     </div>
-                                </div>
+                                </a>
                             </div>
                             <div className="content-car-col">
-                                <div className="car-item">
+                                <a href="/detail-mobil" className="car-item">
                                     <div className="car-img">
                                         <img src={process.env.PUBLIC_URL + '/img/car/car1.png'} alt="Toyota_Tagline" />
                                     </div>
@@ -37,10 +37,10 @@ function AwalPage()
                                     <div className="car-price">
                                         <p>Rp. 999.999.000</p>
                                     </div>
-                                </div>
+                                </a>
                             </div>
                             <div className="content-car-col">
-                                <div className="car-item">
+                                <a href="/detail-mobil" className="car-item">
                                     <div className="car-img">
                                         <img src={process.env.PUBLIC_URL + '/img/car/car1.png'} alt="Toyota_Tagline" />
                                     </div>
@@ -49,10 +49,10 @@ function AwalPage()
                                     <div className="car-price">
                                         <p>Rp. 999.999.000</p>
                                     </div>
-                                </div>
+                                </a>
                             </div>
                             <div className="content-car-col">
-                                <div className="car-item">
+                                <a href="/detail-mobil" className="car-item">
                                     <div className="car-img">
                                         <img src={process.env.PUBLIC_URL + '/img/car/car1.png'} alt="Toyota_Tagline" />
                                     </div>
@@ -61,10 +61,10 @@ function AwalPage()
                                     <div className="car-price">
                                         <p>Rp. 999.999.000</p>
                                     </div>
-                                </div>
+                                </a>
                             </div>
                             <div className="content-car-col">
-                                <div className="car-item">
+                                <a href="/detail-mobil" className="car-item">
                                     <div className="car-img">
                                         <img src={process.env.PUBLIC_URL + '/img/car/car1.png'} alt="Toyota_Tagline" />
                                     </div>
@@ -73,7 +73,7 @@ function AwalPage()
                                     <div className="car-price">
                                         <p>Rp. 999.999.000</p>
                                     </div>
-                                </div>
+                                </a>
                             </div>
                         </div>
                         <div className="content-location">
